@@ -1,4 +1,4 @@
-describe("my_quick_sort", () => {
+describe("quicksort", () => {
   it("Sorts an array of numbers with no duplicates", () => {
     const a = [ 2, 1, 3, 5, 0, 8, 4, 7, 6];
     expect(a.quicksort()).toEqual(a.sort());
@@ -6,7 +6,8 @@ describe("my_quick_sort", () => {
 
   it("Sorts an array of numbers with duplicates", () => {
     const a = [3, 1, 2, 3, 9, 17, 10, 432, 10];
-    expect(a.quicksort()).toEqual(a.sort());
+    const sorted = [1, 2, 3, 3, 9, 10, 10, 17, 432];
+    expect(a.quicksort()).toEqual(sorted);
   });
 
   it("Sorts according to the block passed in", () => {
@@ -16,6 +17,6 @@ describe("my_quick_sort", () => {
       return 1;
     };
 
-    expect(a.quicksort(callback).toEqual(a.sort(callback));
+    expect(a.quicksort(callback)).toEqual(a.sort(callback));
   });
 });

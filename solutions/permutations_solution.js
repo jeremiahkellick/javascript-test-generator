@@ -11,4 +11,8 @@ function permutations(array) {
         permute(curr.slice(), m.concat(next))
      }
    }
+
+   return result;
  }
+ return permute(array);
+}

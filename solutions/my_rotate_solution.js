@@ -1,6 +1,9 @@
 Array.prototype.rotate = function (times = 1) {
-  const rotations = times % this.length;
+  let rotations;
   const rotated = this.slice(0);
+
+  if (times < 0) rotations = this.length % (Math.abs(times) / this.length);
+  else rotations = times % this.length;
 
   for (let i = 0; i < rotations; i++) {
     rotated.push(rotated.shift())
@@ -8,5 +11,3 @@ Array.prototype.rotate = function (times = 1) {
 
   return rotated;
 }
-
-console.log([1, 2, 3].rotate(5))

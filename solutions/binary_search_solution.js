@@ -1,13 +1,15 @@
 Array.prototype.myBsearch = function(target, func) {
   if (this.length === 0) return null;
   const mid = Math.floor(this.length / 2);
-  
+
   if (this[mid] === target) {
     return mid;
   } else if (this[mid] > target) {
     return this.slice(0, mid).myBsearch(target);
   } else {
     const result = this.slice(mid + 1, this.length).myBsearch(target);
-    return result >= 0 ? mid + 1 + result : -1
+    return result === null ? result : mid + 1 + result
   }
 }
+
+console.log([1, 3, 4, 5, 9].myBsearch(5));

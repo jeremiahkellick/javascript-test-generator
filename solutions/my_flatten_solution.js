@@ -1,13 +1,15 @@
 Array.prototype.flatten = function () {
-  const flattened = [];
+  let flattened = [];
 
   this.forEach( (el) => {
     if (el instanceof Array) {
-      flattened.push(el.flatten());
+      flattened = flattened.concat(el.flatten());
     } else {
       flattened.push(el);
     }
-  }
+  });
 
   return flattened;
 }
+
+console.log([1, 2, 3, [4, [5, 6]], [[[7]], 8]].flatten());

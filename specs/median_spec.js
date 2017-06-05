@@ -1,7 +1,7 @@
-describe "#median", () => {
+describe("#median", () => {
   beforeEach(() => {
-    const evenArray = [3, 2, 6, 7];
-    const oddArray = [3, 2, 6, 7, 1];
+    evenArray = [3, 2, 6, 7];
+    oddArray = [3, 2, 6, 7, 1];
   });
 
   it("returns null for the empty array", () => {

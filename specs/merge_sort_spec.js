@@ -1,6 +1,6 @@
 describe("#mergeSort", () => {
   beforeEach( () => {
-    const array = [3, 1, 2, 5, 4];
+    array = [3, 1, 2, 5, 4];
   });
 
   it("works with an empty array", () => {
@@ -21,7 +21,7 @@ describe("#mergeSort", () => {
       return 1;
     };
     const reversed = array.mergeSort(callback);
-    expect(reversed).toEqual([5, 4, 3, 2, 1])l
+    expect(reversed).toEqual([5, 4, 3, 2, 1])
   });
 
   it("does not modify original", () => {
@@ -29,7 +29,7 @@ describe("#mergeSort", () => {
     dupArray.mergeSort();
     expect(dupArray).toEqual(array);
   });
-  // 
+  //
   // it("calls the merge helper method", () => {
   //   expect(Array).to receive(:merge).at_least(:once).and_call_original
   //   array.mergeSort()

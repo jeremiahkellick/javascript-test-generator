@@ -5,7 +5,7 @@ function primeFactorization(num) {
   for (let i = 2; i <= upperRange; i++) {
     if (num % i == 0) {
       let factors = [i].concat(primeFactorization(Math.floor(num / i)));
-      return factors.filter( (el, idx) => idx === factors.indexOf(el));
+      return factors;
     }
   }
 

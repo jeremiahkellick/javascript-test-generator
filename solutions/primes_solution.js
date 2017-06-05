@@ -10,7 +10,7 @@ function primes(count) {
     return true;
   }
 
-  while (primes.length <= count) {
+  while (primes.length < count) {
     if (isPrime(i)) primes.push(i);
     i += 1;
   }

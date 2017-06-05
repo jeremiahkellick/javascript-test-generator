@@ -1,10 +1,11 @@
 describe("deepDup", () => {
   beforeEach( () => {
-    const robotParts = [
+    robotParts = [
       ["nuts", "bolts", "washers"],
       ["capacitors", "resistors", "inductors"]
     ];
-    const copy = deepDup(robotParts);
+    
+    copy = deepDup(robotParts);
   });
 
   it("makes a copy of the original array", () => {

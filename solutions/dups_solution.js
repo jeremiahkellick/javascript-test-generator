@@ -1,10 +1,16 @@
 Array.prototype.dups = function() {
-  const dups = {}
+  const count = {};
+  const dups = {};
 
   this.forEach( (el, idx) => {
-    dups[el] = dups[el] || [];
-    dups[el].push(idx);
-  })
+    count[el] = count[el] || [];
+    count[el].push(idx);
+  });
 
-  return Object.keys(dups).filter( el => dups[el].length > 1)
+  const keys = Object.keys(count).filter( el => count[el].length > 1)
+  keys.forEach( (key) => {
+    dups[key] = count[key];
+  });
+
+  return dups;
 }

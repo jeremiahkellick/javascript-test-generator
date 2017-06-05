@@ -1,6 +1,6 @@
 describe("#bubbleSort", () => {
   beforeEach(() => {
-    const array = [3, 1, 5, 4, 2];
+    array = [3, 1, 5, 4, 2];
   })
 
   it("works with an empty array", () => {
@@ -15,10 +15,10 @@ describe("#bubbleSort", () => {
     expect(array.bubbleSort().join('')).toEqual(array.sort().join(''));
   });
 
-  it("modifies the original array", () => {
+  it("does not modify the original array", () => {
     let dupArray = array.slice(0);
     array.bubbleSort()
-    expect(dupArray).toEqual(array);
+    expect(dupArray).not.toEqual(array);
   })
 
   it("will use a callback if given", () => {

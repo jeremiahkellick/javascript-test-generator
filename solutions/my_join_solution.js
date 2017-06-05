@@ -1,4 +1,4 @@
-Array.prototype.myJoin = function (separator) {
+Array.prototype.myJoin = function (separator = '') {
   let newString = ''
 
   this.forEach( (el, idx) => {

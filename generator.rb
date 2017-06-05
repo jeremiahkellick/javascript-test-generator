@@ -55,8 +55,8 @@ spec = File.open("spec.js", "w")
 solution = File.open("solution.js", "w")
 
 # require rspec and the practice_test in the spec
-spec << "import Jasmine from 'jasmine';" << "\n"
-spec << "import practiceTest from './practice_test';" << "\n"
+# spec << "import Jasmine from 'jasmine';" << "\n"
+# spec << "import practiceTest from './practice_test';" << "\n"
 
 # loop through master tests and add text to the new files
 master.each do |test|
