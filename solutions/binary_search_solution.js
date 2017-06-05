@@ -11,5 +11,3 @@ Array.prototype.myBsearch = function(target, func) {
     return result === null ? result : mid + 1 + result
   }
 }
-
-console.log([1, 3, 4, 5, 9].myBsearch(5));

@@ -17,6 +17,8 @@ median,array,problems/median.js,specs/median_spec.js,solutions/median_solution.j
 merge_sort,sort,problems/merge_sort.js,specs/merge_sort_spec.js,solutions/merge_sort_solution.js
 my_all,enumerable,problems/my_all.js,specs/my_all_spec.js,solutions/my_all_solution.js
 my_any,enumerable,problems/my_any.js,specs/my_any_spec.js,solutions/my_any_solution.js
+my_call,function,problems/my_call.js,specs/my_call_spec.js,solutions/my_call_solution.js
+my_curry,function,problems/my_curry.js,specs/my_curry_spec.js,solutions/my_curry_solution.js
 my_each,enumerable,problems/my_each.js,specs/my_each_spec.js,solutions/my_each_solution.js
 my_flatten,array,problems/my_flatten.js,specs/my_flatten_spec.js,solutions/my_flatten_solution.js
 my_inject,enumerable,problems/my_inject.js,specs/my_inject_spec.js,solutions/my_inject_solution.js
