@@ -36,5 +36,5 @@ string_include_key,recursion,problems/string_include_key.js,specs/string_include
 subsets,recursion,problems/subsets.js,specs/subsets_spec.js,solutions/subsets_solution.js
 symmetric_substrings,string,problems/symmetric_substrings.js,specs/symmetric_substrings_spec.js,solutions/symmetric_substrings_solution.js
 titleize,string,problems/titleize.js,specs/titleize_spec.js,solutions/titleize_solution.js
-transpose,array,problems/transpose.js,specs/transpose_spec.js/solutions/transpose_solution.js
+transpose,array,problems/transpose.js,specs/transpose_spec.js,solutions/transpose_solution.js
 two_sum,array,problems/two_sum.js,specs/two_sum_spec.js,solutions/two_sum_solution.js
