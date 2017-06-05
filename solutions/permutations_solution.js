@@ -12,8 +12,3 @@ function permutations(array) {
      }
    }
  }
-
- permute(array)
-
- return result;
-}
