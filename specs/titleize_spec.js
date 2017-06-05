@@ -1,4 +1,4 @@
-describe "titleize", () => {
+describe("titleize", () => {
   it("capitalizes a word", () => {
     expect(titleize("jaws")).toEqual("Jaws");
   });

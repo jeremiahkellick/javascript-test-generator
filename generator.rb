@@ -25,7 +25,7 @@ puts
 
 # get user request
 puts "Input your requests, separated by commas and spaces please"
-puts "Example input: " + "array: 2, recursion: 1, sort: 1".yellow
+puts "Example input: " + "array: 2, recursion: 1, etc. ".yellow
 input = gets.chomp.split(", ")
 
 categoryrequests = Hash.new(0)
