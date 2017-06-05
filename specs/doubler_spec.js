@@ -1,6 +1,6 @@
 describe("#doubler", () => {
   beforeEach(() => {
-    const array = [1, 2, 3];
+    array = [1, 2, 3];
   });
 
   it("doubles the elements of the array", () => {
@@ -12,6 +12,6 @@ describe("#doubler", () => {
 
     doubler(array);
 
-    expect(array).toEqual(duped_array);
+    expect(array).toEqual(dupArray);
   });
 });
