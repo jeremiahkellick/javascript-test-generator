@@ -50,13 +50,13 @@ categories.each do |category|
 end
 
 # create new test, spec and solution files
-practice_test = File.open("practice_test.rb", "w")
-spec = File.open("spec.rb", "w")
-solution = File.open("solution.rb", "w")
+practice_test = File.open("practice_test.js", "w")
+spec = File.open("spec.js", "w")
+solution = File.open("solution.js", "w")
 
 # require rspec and the practice_test in the spec
-spec << "require 'rspec'" << "\n"
-spec << "require_relative 'practice_test'" << "\n"
+spec << "import Jasmine from 'jasmine';" << "\n"
+spec << "import practiceTest from './practice_test';" << "\n"
 
 # loop through master tests and add text to the new files
 master.each do |test|
