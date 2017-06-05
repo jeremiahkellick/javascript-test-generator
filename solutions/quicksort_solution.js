@@ -1,4 +1,4 @@
-Array.prototype.quicksort = function (func) {
+Array.prototype.quickSort = function (func) {
   if (this.length < 2) return this;
 
   if (!func) {
