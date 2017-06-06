@@ -1,37 +1,44 @@
-describe('Array#my_inject', () => {
+describe('Array#myReduce', () => {
+  let myArray;
+  const noOp = (accum, el) => accum;
 
-  // it('calls the block passed to it', () => {
-  //   expect, () => { |block|
-  //     ["test array"].my_inject(:dummy, &block)
-  //   });.to yield_control.once
-  // });
+  const spy = {
+    sum: (accum, el) => accum + el
+  };
 
-  // it('makes the first element the accumulator if no default is given', () => {
-  //   expect, () => { |block|
-  //     ["el1", "el2", "el3"].my_inject(&block)
-  //   });.to yield_successive_args(["el1", "el2"], [nil, "el3"])
-  // });
+  it("calls the callback, passing in the accumulator and each element", () => {
+    myArray = [1, 2, 3];
+    spyOn(spy, "sum").and.callThrough();
 
-  // it('yields the accumulator and each element to the block', () => {
-  //   expect, () => { |block|
-  //     [1, 2, 3].my_inject(100, &block)
-  //   });.to yield_successive_args([100, 1], [nil, 2], [nil, 3])
-  // });
+    myArray.myReduce(spy.sum);
 
-  // it('does NOT call the built in Array#inject or Array#reduce method', () => {
-  //   original_array = ["original array"]
-  //   expect(original_array).not_to receive(:inject)
-  //   expect(original_array).not_to receive(:reduce)
-  //   original_array.my_inject {}
-  // });
+    expect(spy.sum).toHaveBeenCalledWith(1, 2);
+    expect(spy.sum).toHaveBeenCalledWith(3, 3);
+  });
 
-  // it('with accumulator, it correctly injects and returns answer', () => {
-  //   expect([1, 2, 3].my_inject(1) { |acc, x| acc + x }).to eq(7)
-  //   expect([3, 3].my_inject(3) { |acc, x| acc * x }).to eq(27)
-  // });
+  it("works with a sum callback", () => {
+    myArray = [1, 2, 3, 4];
+    expect(myArray.myReduce(spy.sum)).toEqual(10);
+  });
 
-  // it('without accumulator, it correctly injects and returns answer', () => {
-  //   expect([1, 2, 3].my_inject { |acc, x| acc + x }).to eq(6)
-  //   expect([3, 3].my_inject { |acc, x| acc * x }).to eq(9)
-  // });
+  it("works with a multiplier callback", () => {
+    myArray = [4, 4, 4];
+    const times = (accum, el) => accum * el;
+
+    expect(myArray.myReduce(times)).toEqual(64);
+  });
+
+  it("uses the first item as the accumulator", () => {
+    myArray = [1, 2, 3, 4];
+    expect(myArray.myReduce(noOp)).toEqual(1);
+  });
+
+  it("does not call Array.prototype.reduce", () => {
+    myArray = [1, 2, 3, 4];
+    spyOn(myArray, "reduce");
+
+    myArray.myReduce(spy.sum);
+
+    expect(myArray.reduce).not.toHaveBeenCalled();
+  });
 });
