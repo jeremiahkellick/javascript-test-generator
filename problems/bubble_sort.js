@@ -1,3 +1,3 @@
-Array.prototype.bubbleSort = function (func) => {
+Array.prototype.bubbleSort = function (func) {
 
 }
