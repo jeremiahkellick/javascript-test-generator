@@ -6,7 +6,3 @@
 function primeFactorization(num) {
 
 }
-
-function isPrime(num) {
-
-}
