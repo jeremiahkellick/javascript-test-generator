@@ -17,3 +17,4 @@ describe("myFind", () => {
 
     expect(spy.callback).toHaveBeenCalled();
   });
+});
