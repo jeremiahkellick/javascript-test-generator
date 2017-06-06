@@ -27,6 +27,7 @@ my_reject,enumerable,problems/my_reject.js,specs/my_reject_spec.js,solutions/my_
 my_reverse,array,problems/my_reverse.js,specs/my_reverse_spec.js,solutions/my_reverse_solution.js
 my_rotate,array,problems/my_rotate.js,specs/my_rotate_spec.js,solutions/my_rotate_solution.js
 my_select,enumerable,problems/my_select.js,specs/my_select_spec.js,solutions/my_select_solution.js
+my_slice,array,problems/my_slice.js,specs/my_slice_spec.js,solutions/my_slice_solution.js
 permutations,recursion,problems/permutations.js,specs/permutations_spec.js,solutions/permutations_solution.js
 pig_latinify,string,problems/pig_latinify.js,specs/pig_latinify_spec.js,solutions/pig_latinify_solution.js
 prime_factorization,recursion,problems/prime_factorization.js,specs/prime_factorization_spec.js,solutions/prime_factorization_solution.js
