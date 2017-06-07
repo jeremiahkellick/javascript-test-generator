@@ -16,9 +16,8 @@ describe("#bubbleSort", () => {
   });
 
   it("does not modify the original array", () => {
-    let dupArray = array.slice(0);
-    array.bubbleSort()
-    expect(dupArray).not.toEqual(array);
+    const sortedArray = array.bubbleSort()
+    expect(sortedArray).not.toEqual(array);
   })
 
   it("will use a callback if given", () => {
