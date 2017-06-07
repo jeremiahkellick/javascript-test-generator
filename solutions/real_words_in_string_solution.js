@@ -14,3 +14,13 @@ String.prototype.realWordsInString = function (dictionary) {
 
   return realWords;
 }
+
+// Brian solution
+String.prototype._realWordsInString = function(dictionary) {
+  realWords = [];
+
+  dictionary.forEach( (el) => {
+    if (string.includes(el)) result.push(el);
+  });
+  return result.sort();
+}
