@@ -1,7 +1,5 @@
 describe("myJoin", () => {
-  beforeEach( () => {
-    const a = ['a', 'b', 'c', 'd'];
-  });
+  const a = ['a', 'b', 'c', 'd'];
 
   it("joins an array if no argument is passed", () => {
     expect(a.myJoin()).toEqual("abcd")
