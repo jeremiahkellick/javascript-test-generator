@@ -1,9 +1,8 @@
 function stringIncludeKey(string, key) {
-  if (!key.length) return true;
-
-  let nextKeyChar = key[0];
-  let keyIndex = string.indexOf(nextKeyChar);
-
-  if (keyIndex < 0) return false;
-  return stringIncludeKey(string.slice(keyIndex + 1), key.slice(1))
+  const keyChars = key.split('');
+  for (let i = 0; i < string.length; i++) {
+    if (keyChars[0] === string[i]) keyChars.shift();
+    if (keyChars.length === 0) return true;
+  }
+  return false;
 }
