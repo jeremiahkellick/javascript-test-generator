@@ -12,7 +12,7 @@ factorials_rec,recursion,problems/factorials_rec.js,specs/factorials_rec_spec.js
 factors,array,problems/factors.js,specs/factors_spec.js,solutions/factors_solution.js
 fibs_sum,recursion,problems/fibs_sum.js,specs/fibs_sum_spec.js,solutions/fibs_sum_solution.js
 first_even_numbers_sum,recursion,problems/first_even_numbers_sum.js,specs/first_even_numbers_sum_spec.js,solutions/first_even_numbers_sum_solution.js
-inherits,function,problems/inherits.js,specs/inherits_spec.js,specs/inherits_spec.js
+inherits,function,problems/inherits.js,specs/inherits_spec.js,solutions/inherits_solution.js
 jumble_sort,sort,problems/jumble_sort.js,specs/jumble_sort_spec.js,solutions/jumble_sort_solution.js
 median,array,problems/median.js,specs/median_spec.js,solutions/median_solution.js
 merge_sort,sort,problems/merge_sort.js,specs/merge_sort_spec.js,solutions/merge_sort_solution.js
