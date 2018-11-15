@@ -1,18 +1,11 @@
-Array.prototype.quickSort = function (func) {
-  if (this.length < 2) return this;
-
-  if (!func) {
-    func = (x, y) => {
-      if (x < y) return - 1;
-      return 1;
-    }
-  }
-
+Array.prototype.quickSort = function(func) {
+  if (func === undefined) func = (a, b) => a - b;
+  if (this.length === 0) return [];
   const pivot = this[0];
-  let left = this.slice(1).filter( (el) => func(el, pivot) === -1);
-  let right = this.slice(1).filter( (el) => func(el, pivot) != -1);
-  left = left.quicksort(func);
-  right = right.quicksort(func);
-
-  return left.concat([pivot]).concat(right);
-}
+  const left = [];
+  const right = [];
+  for (let i = 1; i < this.length; i ++) {
+    func(this[i], pivot) < 0 ? left.push(this[i]) : right.push(this[i]);
+  }
+  return left.quickSort(func).concat(pivot).concat(right.quickSort(func));
+};

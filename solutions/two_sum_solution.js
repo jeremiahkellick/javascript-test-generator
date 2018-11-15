@@ -7,4 +7,4 @@ Array.prototype.twoSum = function () {
   }
 
   return pairs;
-}
+};

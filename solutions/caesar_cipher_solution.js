@@ -1,16 +1,12 @@
 function caesarCipher(str, shift) {
-  const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('')
-  let encoded = ""
-
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] === ' ') {
-      encoded += ' ';
-      continue
+  let result = '';
+  str.split('').forEach((char, i) => {
+    if (char !== ' ') {
+      char = String.fromCharCode(
+        (char.charCodeAt(0) - 97 + 26 + shift) % 26 + 97
+      );
     }
-
-    const offset = (alphabet.indexOf(str[i]) + shift) % 26
-    encoded += alphabet[offset]
-  }
-
-  return encoded
+    result += char;
+  });
+  return result;
 }

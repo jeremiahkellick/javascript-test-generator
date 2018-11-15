@@ -1,12 +1,7 @@
-String.prototype.mySlice = function(start, end) {
-  let slice = "";
-
-  if (typeof end === 'undefined') {
-    end = this.length;
+String.prototype.mySlice = function(start, end = this.length) {
+  let result = '';
+  for (let i = start; i < Math.min(end, this.length); i++) {
+    result += this[i];
   }
-
-  for (let i = start; i < end && i < this.length; i++) {
-    slice += this[i];
-  }
-  return slice;
+  return result;
 };

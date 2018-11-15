@@ -5,4 +5,4 @@ Array.prototype.myFilter = function (func) {
   });
 
   return selection;
-}
+};

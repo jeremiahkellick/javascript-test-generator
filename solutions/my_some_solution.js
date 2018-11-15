@@ -4,4 +4,4 @@ Array.prototype.mySome = function (func) {
   }
 
   return false;
-}
+};

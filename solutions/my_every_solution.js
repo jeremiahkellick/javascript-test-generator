@@ -3,5 +3,5 @@ Array.prototype.myEvery = function (func) {
     if (!func(this[i])) return false;
   }
 
-  return true
-}
+  return true;
+};

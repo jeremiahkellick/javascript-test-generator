@@ -1,13 +1,7 @@
-const transpose = function (arr) {
-  let transposedArr = [];
-  let currRow;
-
-  for (var col = 0; col < arr[0].length; col++) {
-    transposedRow = [];
-    for (var row = 0; row < arr.length; row++) {
-      transposedRow.push(arr[row][col]);
-    }
-    transposedArr.push(transposedRow);
+function transpose(arr) {
+  const result = [];
+  for (let i = 0; i < arr[0].length; i++) {
+    result.push(arr.map(innerArr => innerArr[i]));
   }
-  return transposedArr;
-};
+  return result;
+}

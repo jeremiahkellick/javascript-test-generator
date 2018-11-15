@@ -1,3 +1,3 @@
 function deepDup(arr) {
-  return arr.map( (el) => el.constructor.name === 'Array' ? deepDup(el) : el);
+  return arr.map(el => el instanceof Array ? deepDup(el) : el);
 }

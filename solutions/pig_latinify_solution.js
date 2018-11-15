@@ -1,19 +1,18 @@
 function pigLatinify(sentence) {
-  const words = sentence.split(' ')
-  const translateWord = (word) => {
-    vowels = 'aeiou'.split('');
-    if (vowels.indexOf(word[0]) != -1) {
-      return `${word}ay`;
-    } else {
-      let phonemeEnd = 0;
-      while(!(vowels.indexOf(word[phonemeEnd]) != -1)) {
-        phonemeEnd += 1;
-      }
+  return sentence.split(' ').map(word => pigLatinifyWord(word)).join(' ');
+}
 
-      if (word[phonemeEnd - 1] === 'q') phonemeEnd += 1;
-      return `${word.slice(phonemeEnd)}${word.slice(0, phonemeEnd)}ay`;
-    }
-  }
+function pigLatinifyWord(word) {
+  let i = 0;
+  while (!'aeiou'.includes(word[i])) i += 1;
+  if (word[i - 1] === 'q' && word[i] === 'u') i += 1;
+  return `${word.slice(i)}${word.slice(0, i)}ay`;
+}
 
-  return words.map( word => translateWord(word) ).join(' ');
+// Regex solution
+
+function regexPigLatinify(sentence) {
+  return sentence.split(' ').map(word =>
+    word.replace(/([^aeiou]*qu|[^aeiou]*)(.*)/, (_, p1, p2) => `${p2}${p1}ay`)
+  ).join(' ');
 }

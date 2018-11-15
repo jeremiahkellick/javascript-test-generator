@@ -1,25 +1,15 @@
 Array.prototype.bubbleSort = function(func) {
+  if (func === undefined) func = (a, b) => a - b;
+  const result = this.slice();
   let sorted = false;
-
-  if (!func) {
-    func = (x, y) => {
-      if (x <= y) return -1;
-      return 1;
-    }
-  }
-
   while (!sorted) {
     sorted = true;
-    for (let i = 0; i < this.length; i++) {
-      if (i + 1 === this.length) continue;
-
-      if (func(this[i], this[i + 1]) === 1) {
+    for (let i = 0; i < result.length - 1; i++) {
+      if (func(result[i], result[i + 1]) > 0) {
+        [result[i], result[i + 1]] = [result[i + 1], result[i]];
         sorted = false;
-        let current = this[i], next = this[i + 1];
-        this[i] = next, this[i + 1] = current;
       }
     }
   }
-
-  return this;
-}
+  return result;
+};

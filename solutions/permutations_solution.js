@@ -1,18 +1,11 @@
 function permutations(array) {
-  let result = [];
-
-  const permute = (arr, m = []) => {
-    if (arr.length === 0) {
-      result.push(m)
-    } else {
-      for (let i = 0; i < arr.length; i++) {
-        let curr = arr.slice();
-        let next = curr.splice(i, 1);
-        permute(curr.slice(), m.concat(next))
-     }
-   }
-
-   return result;
- }
- return permute(array);
+  if (array.length === 0) return [[]];
+  const prevPerms = permutations(array.slice(1));
+  const perms = [];
+  prevPerms.forEach(perm => {
+    for (let i = 0; i <= perm.length; i++) {
+      perms.push(perm.slice(0, i).concat(array[0]).concat(perm.slice(i)));
+    }
+  });
+  return perms;
 }

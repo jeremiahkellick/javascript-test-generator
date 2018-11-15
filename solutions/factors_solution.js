@@ -1,4 +1,5 @@
 function factors(num) {
-  let factors = Array.from(Array(num)).map( (el, idx) => idx + 1)
-  return factors.filter( el => num % el === 0);
+  const found = [];
+  for (let i = 1; i <= num; i++) if (num % i === 0) found.push(i);
+  return found;
 }

@@ -10,4 +10,4 @@ Array.prototype.flatten = function () {
   });
 
   return flattened;
-}
+};

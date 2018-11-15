@@ -8,4 +8,4 @@ Array.prototype.median = function () {
   } else {
     return (sorted[mid] + sorted[mid - 1]) / 2;
   }
-}
+};

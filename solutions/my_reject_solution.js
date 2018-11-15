@@ -1,4 +1,4 @@
-Array.prototype.reject = function (func) {
+Array.prototype.reject = function(func) {
   const selection = [];
 
   for (let i = 0; i < this.length; i++) {
@@ -6,4 +6,4 @@ Array.prototype.reject = function (func) {
   }
 
   return selection;
-}
+};
