@@ -19,6 +19,17 @@ describe("myBsearch", () => {
     expect([1, 2, 3, 4, 5, 6].myBsearch(6)).toEqual(5);
   });
 
+  it("uses the provided comparison function if given", () => {
+    expect([
+      'c',
+      'dd',
+      'aaa',
+      'eeee',
+      'fffff',
+      'bbbbbb'
+    ].myBsearch('fffff', (a, b) => a.length - b.length)).toEqual(4);
+  });
+
   it("Returns nil if the element is not in the array (smaller)", () => {
     expect([1, 2, 3, 4, 5, 6].myBsearch(0)).toEqual(null);
   });
