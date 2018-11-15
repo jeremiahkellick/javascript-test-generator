@@ -4,10 +4,10 @@ describe("symmetricSubstrings", () => {
   });
 
   it("handles two substrings", () => {
-    expect("aba1cdc".symmetricSubstrings()).toEqual(["aba", "cdc"]);
+    expect("aba1cdc".symmetricSubstrings().sort()).toEqual(["aba", "cdc"]);
   });
 
   it("handles nested substrings", () => {
-    expect("xabax".symmetricSubstrings()).toEqual(["aba", "xabax"]);
+    expect("xabax".symmetricSubstrings().sort()).toEqual(["aba", "xabax"]);
   });
 });
