@@ -1,4 +1,4 @@
-describe("#dups", () => {
+describe("dups", () => {
   it("solves a simple example", () => {
     expect([1, 3, 0, 1].dups()).toEqual({ 1: [0, 3] });
   });

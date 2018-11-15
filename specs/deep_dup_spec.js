@@ -1,10 +1,12 @@
 describe("deepDup", () => {
+  let robotParts, copy;
+
   beforeEach( () => {
     robotParts = [
       ["nuts", "bolts", "washers"],
       ["capacitors", "resistors", "inductors"]
     ];
-    
+
     copy = deepDup(robotParts);
   });
 

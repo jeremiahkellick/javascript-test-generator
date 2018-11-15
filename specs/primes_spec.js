@@ -1,4 +1,4 @@
-describe("#primes", () => {
+describe("primes", () => {
   it("returns first five primes in order", () => {
     expect(primes(5)).toEqual([2, 3, 5, 7, 11]);
   });

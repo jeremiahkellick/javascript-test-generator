@@ -4,6 +4,6 @@ describe('subsets', () => {
       [], [1], [2], [1, 2], [3], [1, 3], [2, 3], [1, 2, 3]
     ];
 
-    expect(subsets([1, 2, 3])).toEqual(subs);
+    expect(subsets([1, 2, 3]).sort()).toEqual(subs.sort());
   });
 });

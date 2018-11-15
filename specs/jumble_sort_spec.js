@@ -1,4 +1,4 @@
-describe("#jumbleSort", () => {
+describe("jumbleSort", () => {
   it("defaults to alphabetical order", () => {
     expect(jumbleSort("hello")).toEqual("ehllo");
   });
@@ -10,7 +10,7 @@ describe("#jumbleSort", () => {
   });
 
   it("sorts by a reversed alphabet", () => {
-    reverse = 'abcdefghijklmnopqrstuvwxyz'.split('').reverse().join('')
+    const reverse = 'abcdefghijklmnopqrstuvwxyz'.split('').reverse().join('');
     expect(jumbleSort("hello", reverse)).toEqual("ollhe");
   });
 });

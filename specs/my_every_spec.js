@@ -1,4 +1,6 @@
 describe('myEvery', () => {
+  let a;
+
   beforeEach( () => {
     a = [2, 4, 6];
   });

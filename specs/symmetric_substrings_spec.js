@@ -1,4 +1,4 @@
-describe("#symmetricSubstrings", () => {
+describe("symmetricSubstrings", () => {
   it("handles a simple example", () => {
     expect("aba".symmetricSubstrings()).toEqual(["aba"]);
   });

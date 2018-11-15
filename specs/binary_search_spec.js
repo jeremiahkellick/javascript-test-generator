@@ -1,4 +1,4 @@
-describe("my_bsearch", () => {
+describe("myBsearch", () => {
   it("finds the first element in the array", () => {
     expect([1, 2, 3].myBsearch(1)).toEqual(0);
   });

@@ -1,4 +1,4 @@
-describe("#pigLatinify", () => {
+describe("pigLatinify", () => {
   it("translates a word beginning with a vowel", () => {
     const s = pigLatinify("apple");
     expect(s).toEqual("appleay");

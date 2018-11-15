@@ -1,5 +1,5 @@
 describe("rotate", () => {
-  const arrToRotate = [ "a", "b", "c", "d" ]
+  const arrToRotate = [ "a", "b", "c", "d" ];
 
   it("Rotates the elements 1 position if no argument is passed in", () => {
     expect(arrToRotate.rotate()).toEqual(["b", "c", "d", "a"]);

@@ -1,4 +1,6 @@
-describe("#doubler", () => {
+describe("doubler", () => {
+  let array;
+
   beforeEach(() => {
     array = [1, 2, 3];
   });

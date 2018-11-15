@@ -1,4 +1,4 @@
-describe("#twoSum", () => {
+describe("twoSum", () => {
   it("returns positions of pairs of numbers that add to zero", () => {
     expect([5, 1, -7, -5].twoSum()).toEqual([[0, 3]]);
   });

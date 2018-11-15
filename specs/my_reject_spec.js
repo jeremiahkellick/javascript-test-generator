@@ -1,4 +1,6 @@
 describe('reject', () => {
+  let a;
+
   beforeEach( () => {
     a = [1, 2, 3];
   });

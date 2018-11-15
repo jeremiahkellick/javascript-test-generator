@@ -1,4 +1,6 @@
-describe("#recSum", () => {
+describe("recSum", () => {
+  let arr;
+
   it("returns the sums of all elements in an array", () => {
     arr = [1,2,3,4];
     expect(recSum(arr)).toEqual(10);

@@ -1,4 +1,4 @@
-describe("#factors", () => {
+describe("factors", () => {
   it("returns the factors of 10 in order", () => {
     expect(factors(10)).toEqual([1, 2, 5, 10]);
   });

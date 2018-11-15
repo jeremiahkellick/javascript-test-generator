@@ -1,4 +1,6 @@
 describe("Function.prototype.myCall", () => {
+  let sally, markov, curie;
+
   beforeEach(() => {
     class Cat {
       constructor (name) {

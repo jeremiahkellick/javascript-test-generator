@@ -3,7 +3,7 @@ describe("Function.prototype.myCurry", () => {
     return argBalls.reduce((a, b) => {
       return a + b;
     }, 0);
-  }
+  };
   const addObj = { adder };
 
 

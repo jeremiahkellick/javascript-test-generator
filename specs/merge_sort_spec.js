@@ -1,4 +1,6 @@
-describe("#mergeSort", () => {
+describe("mergeSort", () => {
+  let array;
+
   beforeEach( () => {
     array = [3, 1, 2, 5, 4];
   });
@@ -21,11 +23,11 @@ describe("#mergeSort", () => {
       return 1;
     };
     const reversed = array.mergeSort(callback);
-    expect(reversed).toEqual([5, 4, 3, 2, 1])
+    expect(reversed).toEqual([5, 4, 3, 2, 1]);
   });
 
   it("does not modify original", () => {
-    dupArray = array.slice(0);
+    const dupArray = array.slice(0);
     dupArray.mergeSort();
     expect(dupArray).toEqual(array);
   });

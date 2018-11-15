@@ -1,5 +1,4 @@
 describe("Function.prototype.myBind", () => {
-  // let Cat;
   let sally, markov, curie;
 
   beforeEach(() => {

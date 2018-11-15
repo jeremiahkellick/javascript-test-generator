@@ -1,4 +1,4 @@
-describe("#caesarCipher", () => {
+describe("caesarCipher", () => {
   it("encodes a simple word", () => {
     expect(caesarCipher("aaa", 11)).toEqual("lll");
   });
