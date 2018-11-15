@@ -1,3 +1,3 @@
-Array.prototype.myReverse = function () {
+Array.prototype.myReverse = function() {
 
-}
+};

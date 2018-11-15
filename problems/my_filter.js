@@ -1,3 +1,3 @@
-Array.prototype.myFilter = function (func) {
+Array.prototype.myFilter = function(func) {
 
-}
+};

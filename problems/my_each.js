@@ -1,3 +1,3 @@
-Array.prototype.myEach = function (func) {
+Array.prototype.myEach = function(func) {
 
-}
+};

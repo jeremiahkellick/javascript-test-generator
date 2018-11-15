@@ -1,3 +1,3 @@
-Array.prototype.myJoin = function (separator) {
+Array.prototype.myJoin = function(separator) {
 
-}
+};

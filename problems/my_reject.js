@@ -1,3 +1,3 @@
-Array.prototype.reject = function (func) {
+Array.prototype.reject = function(func) {
 
-}
+};

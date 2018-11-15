@@ -1,3 +1,3 @@
-Function.prototype.myCall = function (ctx, ...args) {
+Function.prototype.myCall = function(ctx, ...args) {
 
 };

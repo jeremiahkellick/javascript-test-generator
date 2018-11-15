@@ -1,3 +1,3 @@
-Function.prototype.myCurry = function (numArgs) {
+Function.prototype.myCurry = function(numArgs) {
 
 };

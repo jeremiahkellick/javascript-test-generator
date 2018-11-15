@@ -1,3 +1,3 @@
-Array.prototype.myEvery = function (func) {
+Array.prototype.myEvery = function(func) {
 
-}
+};

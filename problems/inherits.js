@@ -1,5 +1,5 @@
-// write Function.prototype.inherits.
+// write Function.prototype.inherits
 
-Function.prototype.inherits = function () {
-  
-}
+Function.prototype.inherits = function() {
+
+};

@@ -1,3 +1,3 @@
-Array.prototype.rotate = function (num) {
+Array.prototype.rotate = function(num) {
 
-}
+};

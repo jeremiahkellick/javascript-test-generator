@@ -1,3 +1,3 @@
-Array.prototype.flatten = function () {
+Array.prototype.flatten = function() {
 
-}
+};

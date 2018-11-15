@@ -1,5 +1,5 @@
-// Write a method, `Array#two_sum`, that finds all pairs of positions where the
-// elements at those positions sum to zero.
+// Write a method, `Array.prototype.twoSum`, that finds all pairs of positions
+// where the elements at those positions sum to zero.
 
 // NB: ordering matters. I want each of the pairs to be sorted smaller index
 // before bigger index. I want the array of pairs to be sorted
@@ -9,4 +9,4 @@
 
 Array.prototype.twoSum = function () {
 
-}
+};

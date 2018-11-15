@@ -1,4 +1,5 @@
-// write Function.prototype.myBind.
-Function.prototype.myBind = function () {
-  
-}
+// write Function.prototype.myBind
+
+Function.prototype.myBind = function() {
+
+};

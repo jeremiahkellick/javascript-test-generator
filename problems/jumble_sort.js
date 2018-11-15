@@ -3,8 +3,8 @@
 // no alphabet is passed in, it defaults to normal alphabetical order (a-z).
 //
 // Example:
-// jumble_sort("hello") => "ehllo"
-// jumble_sort("hello", ['o', 'l', 'h', 'e']) => 'ollhe'
+// jumbleSort('hello') => 'ehllo'
+// jumbleSort('hello', ['o', 'l', 'h', 'e']) => 'ollhe'
 
 function jumbleSort(str, alphabet = null) {
 

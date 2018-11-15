@@ -1,9 +1,9 @@
-// Write an Array#merge_sort method; it should not modify the original array.
+// Write an Array.prototype.mergeSort method. It should not mutate the array.
 
-Array.prototype.mergeSort = function (func) {
+Array.prototype.mergeSort = function(func) {
 
-}
+};
 
-Array.prototype.merge = function (arr, func) {
+Array.prototype.merge = function(arr, func) {
 
-}
+};
